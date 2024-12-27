@@ -58,7 +58,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-    grid-template-areas: 'calendario graficos'
+    grid-template-areas: "calendario graficos"
 }
 
 
@@ -137,7 +137,7 @@
     display: grid;
     gap: 25px;
     grid-template-columns: 1.6fr 4.2fr 2.2fr;
-    grid-template-areas: 'imagem informacoes informacoes informacoes versoes'
+    grid-template-areas: "imagem informacoes informacoes informacoes versoes"
 }
 
 .info1 {
@@ -180,19 +180,19 @@
 
 .autor a:not(:first-of-type)::before,
 .diretor a:not(:first-of-type)::before {
-    content: ', ';
+    content: ", ";
   font-weight:normal;
 }
 
 .autor a:last-of-type::before,
 .diretor a:last-of-type::before {
-    content: ' e ';
+    content: " e ";
   font-weight:normal;
 }
   
 .autor a:only-of-type::before,
 .diretor a:only-of-type::before {
-    content: '';
+    content: "";
     font-weight: normal;
 }
   
@@ -273,7 +273,7 @@
 }
   
 .noar .formato::after{
-  content:'no ar';
+  content:"no ar";
   padding:5px 10px;
   line-height:1;
   background-color:rgba(255,255,255,0.2);
@@ -750,12 +750,12 @@
 .elevacaopnt .pos::before,
 .totalcap.positivo::before,
 .positivo::before{
-    content: '+';
+    content: "+";
     display: inline-block;
 }
 
 .negativo::before {
-    content: '';
+    content: "";
     display: inline-block;
 }
 
@@ -769,7 +769,7 @@
 .info3 .negativo::after,
 .info4 .positivo::after,
 .info4 .negativo::after {
-    content: 'pontos';
+    content: "pontos";
     padding-left: 5px;
     display: inline-block;
 }
@@ -961,7 +961,7 @@
 .calendario .linha {
     display: grid;
     grid-template-columns: repeat(11, 1fr);
-    grid-template-areas: 'ordem inicio inicio fim fim dia1 dia2 dia3 dia4 dia5 dia6';
+    grid-template-areas: "ordem inicio inicio fim fim dia1 dia2 dia3 dia4 dia5 dia6";
     gap: 7px;
     padding: 0px 10px;
     border-radius: 5px;
@@ -979,7 +979,7 @@
 .calendario-media .linha {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    grid-template-areas: 'ordem mediasp mediasp mediarj mediarj mediapnt mediapnt';
+    grid-template-areas: "ordem mediasp mediasp mediarj mediarj mediapnt mediapnt";
     gap: 7px;
 }
 
@@ -1772,7 +1772,7 @@ background: radial-gradient(circle, #1995ee, #0f5d91);
         border-radius: 12px;
         gap: 20px;
         background-color: rgba(0, 0, 0, 0.3);
-grid-template-areas: 'titulo producao1 producao2 producao3 producao4 producao5';
+grid-template-areas: "titulo producao1 producao2 producao3 producao4 producao5";
   }
 
     .bloco-homepage .emissora img {
@@ -1886,7 +1886,7 @@ grid-template-areas: 'titulo producao1 producao2 producao3 producao4 producao5';
 
     body,
     html {
-        font-family: 'Plus Jakarta Sans' !important;
+        font-family: "Plus Jakarta Sans" !important;
     }
 
     .autopagerize_page_element {
@@ -1932,7 +1932,7 @@ grid-template-areas: 'titulo producao1 producao2 producao3 producao4 producao5';
     }
 
     .calendario .linha {
-        grid-template-areas: 'ordem inicio inicio dia1 dia2 dia3 dia4 dia5 dia6' !important;
+        grid-template-areas: "ordem inicio inicio dia1 dia2 dia3 dia4 dia5 dia6" !important;
         grid-template-columns: repeat(9, 1fr) !important;
         padding: 5px !important;
         gap: 5px !important;
@@ -1958,9 +1958,9 @@ grid-template-areas: 'titulo producao1 producao2 producao3 producao4 producao5';
 
     .informacoes {
         grid-template-areas:
-            'imagem'
-            'informacoes'
-            'versoes' !important;
+            "imagem"
+            "informacoes"
+            "versoes" !important;
         grid-template-columns: 1fr !important;
     }
 
@@ -2039,7 +2039,7 @@ grid-template-areas: 'titulo producao1 producao2 producao3 producao4 producao5';
     }
 
     .calendario .linha {
-        grid-template-areas: 'ordem inicio inicio dia1 dia2 dia3 dia4 dia5 dia6' !important;
+        grid-template-areas: "ordem inicio inicio dia1 dia2 dia3 dia4 dia5 dia6" !important;
         grid-template-columns: repeat(9, 1fr) !important;
         padding: 5px !important;
         gap: 5px !important;
