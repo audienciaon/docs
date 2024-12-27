@@ -1,27 +1,30 @@
-<style>
-  
-  
-  
-  html, body {
-  font-family: &quot;Plus Jakarta Sans&quot;, sans-serif !important;
+<style>html,
+body {
+    font-family: &quot;
+    Plus Jakarta Sans&quot;
+    ,
+    sans-serif !important;
 }
 
-  .post-title, .post-meta{display: none !important}
-  
-  
-  
-  
-  
-  
-  
-  :root {
+.post-title,
+.post-meta {
+    display: none !important
+}
+
+
+
+
+
+
+
+:root {
     --cor-maxima: #fff;
     --cor-fundo: #eee;
     --cor-escura: #ddd;
     --cor-secundaria: #ccc;
     --cor-texto: #444;
-    --cor-inversa:222;
-    --cor-destaque:#1995ee;
+    --cor-inversa: 222;
+    --cor-destaque: #1995ee;
     --fonte-producao: 30px;
     --fonte-numero: 35px;
     --fonte-titulo: 20px;
@@ -29,8 +32,9 @@
     --fonte-pequena: 14px;
     --fonte-minuscula: 12px;
     --font-family: Plus Jakarta Sans;
-  }
-  /* Segundo :root */
+}
+
+/* Segundo :root */
 /* 
 
 :root {
@@ -62,7 +66,8 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-    grid-template-areas: &#39;calendario graficos&#39;
+    grid-template-areas: &#39;
+    calendario graficos&#39;
 }
 
 
@@ -99,7 +104,9 @@
 
 
 
-.post-image-link {aspect-ratio: 2 / 3}
+.post-image-link {
+    aspect-ratio: 2 / 3
+}
 
 
 
@@ -128,20 +135,21 @@
 
 .publicacao:hover .cabecalho {
     background-position: bottom;
-  line-height:1 !important
+    line-height: 1 !important
 }
 
 .informacoes {
     background-color: rgba(0, 0, 0, 0.4);
     padding: 40px;
-  border-radius:12px;
+    border-radius: 12px;
     width: calc(100% - 80px);
     height: calc(100% - 80px);
     backdrop-filter: blur(200px) saturate(120%) !important;
     display: grid;
     gap: 25px;
     grid-template-columns: 1.6fr 4.2fr 2.2fr;
-    grid-template-areas: &#39;imagem informacoes informacoes informacoes versoes&#39;
+    grid-template-areas: &#39;
+    imagem informacoes informacoes informacoes versoes&#39;
 }
 
 .info1 {
@@ -184,24 +192,33 @@
 
 .autor a:not(:first-of-type)::before,
 .diretor a:not(:first-of-type)::before {
-    content: &#39;, &#39;;
-  font-weight:normal;
+    content: &#39;
+    ,
+    &#39;
+    ;
+    font-weight: normal;
 }
 
 .autor a:last-of-type::before,
 .diretor a:last-of-type::before {
-    content: &#39; e &#39;;
-  font-weight:normal;
-}
-  
-.autor a:only-of-type::before,
-.diretor a:only-of-type::before {
-    content: &#39;&#39;;
+    content: &#39;
+    e &#39;
+    ;
     font-weight: normal;
 }
-  
-  .cabecalho .horario::before {
-    content: &quot; exibida na faixa &quot;;
+
+.autor a:only-of-type::before,
+.diretor a:only-of-type::before {
+    content: &#39;
+    &#39;
+    ;
+    font-weight: normal;
+}
+
+.cabecalho .horario::before {
+    content: &quot;
+    exibida na faixa &quot;
+    ;
 }
 
 .cabecalho .producao {
@@ -224,39 +241,58 @@
 }
 
 .cabecalho .autor::before {
-    content: &quot;Autoria de &quot;;
+    content: &quot;
+    Autoria de &quot;
+    ;
 }
 
 .cabecalho .diretor::before {
-    content: &quot;Direção de &quot;;
+    content: &quot;
+    Direção de &quot;
+    ;
 }
 
 .primeirocap::before {
-    content: &quot;Exibida entre &quot;;
+    content: &quot;
+    Exibida entre &quot;
+    ;
 }
 
 .noar .primeirocap::before {
-    content: &quot;Exibida desde &quot; !important;
+    content: &quot;
+    Exibida desde &quot;
+    !important;
 }
 
 .primeirocap::after {
-    content: &quot; e &quot;;
+    content: &quot;
+    e &quot;
+    ;
 }
 
 .noar .primeirocap::after {
-    content: &quot;&quot; !important;
+    content: &quot;
+    &quot;
+    !important;
 }
 
 .capitulos::before {
-    content: &quot;, com &quot;;
+    content: &quot;
+    ,
+    com &quot;
+    ;
 }
 
 .capitulos::after {
-    content: &quot; capítulos&quot;;
+    content: &quot;
+    capítulos&quot;
+    ;
 }
 
 .noar .capitulos::after {
-    content: &quot; capítulos até agora&quot; !important;
+    content: &quot;
+    capítulos até agora&quot;
+    !important;
 }
 
 .producao,
@@ -275,18 +311,20 @@
     flex-wrap: wrap;
     line-height: 1;
 }
-  
-.noar .formato::after{
-  content:&#39;no ar&#39;;
-  padding:5px 10px;
-  line-height:1;
-  background-color:rgba(255,255,255,0.2);
-  border-radius:4px;
-  text-transform:uppercase;
-  font-weight:700;
-  font-size:var(--fonte-minuscula);
-  margin-left:10px;
-  }
+
+.noar .formato::after {
+    content: &#39;
+    no ar&#39;
+    ;
+    padding: 5px 10px;
+    line-height: 1;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: var(--fonte-minuscula);
+    margin-left: 10px;
+}
 
 
 .cabecalho .links {
@@ -357,42 +395,56 @@
 
 .globoplay::before {
     color: #fff;
-    content: &quot;globoplay&quot;;
+    content: &quot;
+    globoplay&quot;
+    ;
 }
 
 .memoriaglobo::before {
     color: #fff;
-    content: &quot;memoriaglobo&quot;;
+    content: &quot;
+    memoriaglobo&quot;
+    ;
 }
 
 .wikipedia::before {
     color: #fff;
-    content: &quot;wikipedia&quot;;
+    content: &quot;
+    wikipedia&quot;
+    ;
 }
 
 .imdb::before {
     color: #fff;
-    content: &quot;imdb&quot;;
+    content: &quot;
+    imdb&quot;
+    ;
 }
 
 .tvtime::before {
     color: #fff;
-    content: &quot;tvtime&quot;;
+    content: &quot;
+    tvtime&quot;
+    ;
 }
 
 .trakttv::before {
     color: #fff;
-    content: &quot;trakt.tv&quot;;
+    content: &quot;
+    trakt.tv&quot;
+    ;
 }
 
 .filmow::before {
     color: #fff;
-    content: &quot;filmow&quot;;
+    content: &quot;
+    filmow&quot;
+    ;
 }
 
 
 .versoes {
-  line-height:1;
+    line-height: 1;
     grid-area: versoes;
     display: grid;
     gap: 10px;
@@ -513,23 +565,32 @@
 }
 
 .audpricap .data::before {
-    content: &quot;pontos no primeiro capítulo, exibido em &quot;
+    content: &quot;
+    pontos no primeiro capítulo,
+    exibido em &quot;
 }
 
 .maioraud .data::before {
-    content: &quot;pontos na maior audiência, em &quot;
+    content: &quot;
+    pontos na maior audiência,
+    em &quot;
 }
 
 .menoraud .data::before {
-    content: &quot;pontos na menor audiência, em &quot;
+    content: &quot;
+    pontos na menor audiência,
+    em &quot;
 }
 
 .audultcap .data::before {
-    content: &quot;pontos no último capítulo, em &quot;
+    content: &quot;
+    pontos no último capítulo,
+    em &quot;
 }
 
 .nameta::after {
-    content: &quot;capítulos atingiram a meta do horário&quot;
+    content: &quot;
+    capítulos atingiram a meta do horário&quot;
 }
 
 /*
@@ -543,63 +604,95 @@
 
 .noar .cap25 .data::before {
     display: inline-block;
-    content: &quot;pontos até o 25º capítulo, exibido em &quot; !important;
+    content: &quot;
+    pontos até o 25º capítulo,
+    exibido em &quot;
+    !important;
 }
 
 .noar .cap50 .data::before {
     display: inline-block;
-    content: &quot;pontos até o 50º capítulo, exibido em &quot; !important;
+    content: &quot;
+    pontos até o 50º capítulo,
+    exibido em &quot;
+    !important;
 }
 
 .noar .cap100 .data::before {
     display: inline-block;
-    content: &quot;pontos até o 100º capítulo, exibido em &quot; !important;
+    content: &quot;
+    pontos até o 100º capítulo,
+    exibido em &quot;
+    !important;
 }
 
 .noar .cap150 .data::before {
     display: inline-block;
-    content: &quot;pontos até o 150º capítulo, exibido em &quot; !important;
+    content: &quot;
+    pontos até o 150º capítulo,
+    exibido em &quot;
+    !important;
 }
 
 .noar .totalcap .data::before {
     display: inline;
-    content: &quot; pontos de média nos &quot; !important;
+    content: &quot;
+    pontos de média nos &quot;
+    !important;
     margin-right: 5px;
 }
 
 .noar .totalcap .data::after {
-    content: &quot; capítulos já exibidos&quot; !important;
+    content: &quot;
+    capítulos já exibidos&quot;
+    !important;
 }
 
 
 
 .cap25 .data::before {
     display: inline-block;
-    content: &quot;pontos até o 25º capítulo, exibido em &quot;;
+    content: &quot;
+    pontos até o 25º capítulo,
+    exibido em &quot;
+    ;
 }
 
 .cap50 .data::before {
     display: inline-block;
-    content: &quot;pontos até o 50º capítulo, exibido em &quot;;
+    content: &quot;
+    pontos até o 50º capítulo,
+    exibido em &quot;
+    ;
 }
 
 .cap100 .data::before {
     display: inline-block;
-    content: &quot;pontos até o 100º capítulo, exibido em &quot;;
+    content: &quot;
+    pontos até o 100º capítulo,
+    exibido em &quot;
+    ;
 }
 
 .cap150 .data::before {
     display: inline-block;
-    content: &quot;pontos até o 150º capítulo, exibido em &quot;;
+    content: &quot;
+    pontos até o 150º capítulo,
+    exibido em &quot;
+    ;
 }
 
 .totalcap .data::before {
     display: inline-block;
-    content: &quot; pontos é a média nas &quot;;
+    content: &quot;
+    pontos é a média nas &quot;
+    ;
 }
 
 .totalcap .data::after {
-    content: &quot; exibições da produção&quot;;
+    content: &quot;
+    exibições da produção&quot;
+    ;
 }
 
 
@@ -609,22 +702,34 @@
 
 .cap25.fade .data::before {
     display: inline-block;
-    content: &quot;pontos até o 25º capítulo, ainda não exibido&quot; !important;
+    content: &quot;
+    pontos até o 25º capítulo,
+    ainda não exibido&quot;
+    !important;
 }
 
 .cap50.fade .data::before {
     display: inline-block;
-    content: &quot;pontos até o 50º capítulo, ainda não exibido&quot; !important
+    content: &quot;
+    pontos até o 50º capítulo,
+    ainda não exibido&quot;
+    !important
 }
 
 .cap100.fade .data::before {
     display: inline-block;
-    content: &quot;pontos até o 100º capítulo, ainda não exibido&quot; !important
+    content: &quot;
+    pontos até o 100º capítulo,
+    ainda não exibido&quot;
+    !important
 }
 
 .cap150.fade .data::before {
     display: inline-block;
-    content: &quot;pontos até o 150º capítulo, ainda não exibido&quot; !important
+    content: &quot;
+    pontos até o 150º capítulo,
+    ainda não exibido&quot;
+    !important
 }
 
 
@@ -633,27 +738,37 @@
 
 .info4 .sharesp::after {
     display: inline-block;
-    content: &quot;é a média de share na região da Grande São Paulo&quot;;
+    content: &quot;
+    é a média de share na região da Grande São Paulo&quot;
+    ;
 }
 
 .info4 .sharerj::after {
     display: inline-block;
-    content: &quot;é a média de share na região da Grande Rio de Janeiro&quot;;
+    content: &quot;
+    é a média de share na região da Grande Rio de Janeiro&quot;
+    ;
 }
 
 .info4 .elevacaosp::after {
     display: inline-block;
-    content: &quot;pontos na Grande São Paulo em relação à exibição anterior&quot;;
+    content: &quot;
+    pontos na Grande São Paulo em relação à exibição anterior&quot;
+    ;
 }
 
 .info4 .elevacaorj::after {
     display: inline-block;
-    content: &quot;pontos na Grande Rio de Janeiro em relação à exibição anterior&quot;;
+    content: &quot;
+    pontos na Grande Rio de Janeiro em relação à exibição anterior&quot;
+    ;
 }
 
 .info4 .elevacaopnt::after {
     display: inline-block;
-    content: &quot;pontos no Painel Nacional de Televisão em relação à exibição anterior&quot;;
+    content: &quot;
+    pontos no Painel Nacional de Televisão em relação à exibição anterior&quot;
+    ;
 }
 
 
@@ -680,7 +795,7 @@
     font-size: var(--fonte-pequena) !important;
     display: inline-block;
     line-height: 1.5;
-  }
+}
 
 .nameta::after {
     display: block;
@@ -753,13 +868,17 @@
 .elevacaorj .pos::before,
 .elevacaopnt .pos::before,
 .totalcap.positivo::before,
-.positivo::before{
-    content: &#39;+&#39;;
+.positivo::before {
+    content: &#39;
+    +&#39;
+    ;
     display: inline-block;
 }
 
 .negativo::before {
-    content: &#39;&#39;;
+    content: &#39;
+    &#39;
+    ;
     display: inline-block;
 }
 
@@ -773,7 +892,9 @@
 .info3 .negativo::after,
 .info4 .positivo::after,
 .info4 .negativo::after {
-    content: &#39;pontos&#39;;
+    content: &#39;
+    pontos&#39;
+    ;
     padding-left: 5px;
     display: inline-block;
 }
@@ -786,39 +907,57 @@
 
 
 .info3-titulo::before {
-    content: &quot;Marcas de audiência da produção em São Paulo&quot;;
+    content: &quot;
+    Marcas de audiência da produção em São Paulo&quot;
+    ;
 }
 
 .grafico-diaria-titulo::before {
-    content: &quot;Gráfico da audiência detalhada por dia em São Paulo&quot;;
+    content: &quot;
+    Gráfico da audiência detalhada por dia em São Paulo&quot;
+    ;
 }
 
 .grafico-acumulado-titulo::before {
-    content: &quot;Gráfico da média de audiência até o capítulo em São Paulo&quot;;
+    content: &quot;
+    Gráfico da média de audiência até o capítulo em São Paulo&quot;
+    ;
 }
 
 .calendario-titulo::before {
-    content: &quot;Tabela da audiência detalhada em São Paulo&quot;;
+    content: &quot;
+    Tabela da audiência detalhada em São Paulo&quot;
+    ;
 }
 
 .calendario-media-titulo::before {
-    content: &quot;Média por semana&quot;;
+    content: &quot;
+    Média por semana&quot;
+    ;
 }
 
 .linhadotempo-titulo::before {
-    content: &quot;Cronologia de produções no horário&quot;;
+    content: &quot;
+    Cronologia de produções no horário&quot;
+    ;
 }
 
 .capitulosacumulados-titulo::before {
-    content: &quot;Evolução da audiência por capítulos acumulados em São Paulo&quot;;
+    content: &quot;
+    Evolução da audiência por capítulos acumulados em São Paulo&quot;
+    ;
 }
 
 .grafico-comparacao-titulo::before {
-    content: &quot;Comparação da audiência em São Paulo com produções anteriores do horário&quot;;
+    content: &quot;
+    Comparação da audiência em São Paulo com produções anteriores do horário&quot;
+    ;
 }
 
 .elevacaoshare-titulo::before {
-    content: &quot;Share e elevação em comparação com a exibição anterior&quot;;
+    content: &quot;
+    Share e elevação em comparação com a exibição anterior&quot;
+    ;
 }
 
 
@@ -838,7 +977,7 @@
     display: block;
     margin-top: 20px;
     line-height: 1.2;
-    color:var(--cor-inversa);
+    color: var(--cor-inversa);
 }
 
 .grafico-diaria {
@@ -905,7 +1044,7 @@
     text-align: center !important;
     padding: 5px 8px;
     color: var(--cor-texto) !important;
-  position: absolute;
+    position: absolute;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -926,8 +1065,9 @@
 .grafico-diaria .dia .dados .numero .capitulo {
     opacity: 0.4;
     font-weight: 600;
-    margin-top: 3px;}
-  
+    margin-top: 3px;
+}
+
 .primeirocapitulo .numero,
 .primeirocapitulo,
 .ultimocapitulo .numero,
@@ -965,7 +1105,9 @@
 .calendario .linha {
     display: grid;
     grid-template-columns: repeat(11, 1fr);
-    grid-template-areas: &#39;ordem inicio inicio fim fim dia1 dia2 dia3 dia4 dia5 dia6&#39;;
+    grid-template-areas: &#39;
+    ordem inicio inicio fim fim dia1 dia2 dia3 dia4 dia5 dia6&#39;
+    ;
     gap: 7px;
     padding: 0px 10px;
     border-radius: 5px;
@@ -983,7 +1125,9 @@
 .calendario-media .linha {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    grid-template-areas: &#39;ordem mediasp mediasp mediarj mediarj mediapnt mediapnt&#39;;
+    grid-template-areas: &#39;
+    ordem mediasp mediasp mediarj mediarj mediapnt mediapnt&#39;
+    ;
     gap: 7px;
 }
 
@@ -1112,55 +1256,68 @@
 
 .calendario .cab .ordem::before,
 .calendario-media .cab .ordem::before {
-    content: &quot;Sem.&quot;
+    content: &quot;
+    Sem.&quot;
 }
 
 .calendario .cab .inicio::before {
-    content: &quot;Início&quot;
+    content: &quot;
+    Início&quot;
 }
 
 .calendario .cab .fim::before {
-    content: &quot;Fim&quot;
+    content: &quot;
+    Fim&quot;
 }
 
 .calendario .cab .dia1::before {
-    content: &quot;Seg&quot;
+    content: &quot;
+    Seg&quot;
 }
 
 .calendario .cab .dia2::before {
-    content: &quot;Ter&quot;
+    content: &quot;
+    Ter&quot;
 }
 
 .calendario .cab .dia3::before {
-    content: &quot;Qua&quot;
+    content: &quot;
+    Qua&quot;
 }
 
 .calendario .cab .dia4::before {
-    content: &quot;Qui&quot;
+    content: &quot;
+    Qui&quot;
 }
 
 .calendario .cab .dia5::before {
-    content: &quot;Sex&quot;
+    content: &quot;
+    Sex&quot;
 }
 
 .calendario .cab .dia6::before {
-    content: &quot;Sáb&quot;
+    content: &quot;
+    Sáb&quot;
 }
 
 .calendario .cab .dia7::before {
-    content: &quot;Dom&quot;
+    content: &quot;
+    Dom&quot;
 }
 
 .calendario-media .cab .mediasp::before {
-    content: &quot;Média SP&quot;
+    content: &quot;
+    Média SP&quot;
 }
 
 .calendario-media .cab .mediarj::before {
-    content: &quot;Média RJ&quot;
+    content: &quot;
+    Média RJ&quot;
 }
 
 .calendario-media .cab .mediapnt::before {
-    content: &quot;Média PNT&quot;
+    content: &quot;
+    Média PNT&quot;
 }
 
 .calendario .cab .dia1,
@@ -1265,20 +1422,20 @@
 .linhadotempo .col1 {
     opacity: 0.5;
     transition: 0.3s;
-  filter:saturate(0%);
+    filter: saturate(0%);
 }
 
 .linhadotempo .col2 {
     opacity: 0.5;
     transition: 0.3s;
-  filter:saturate(0%);
+    filter: saturate(0%);
 }
 
 .linhadotempo .col3,
 .linhadotempo .col5 {
     opacity: 0.5;
     transition: 0.3s;
-  filter:saturate(0%);
+    filter: saturate(0%);
 }
 
 .linhadotempo .col1:hover,
@@ -1286,7 +1443,7 @@
 .linhadotempo .col3:hover,
 .linhadotempo .col5:hover {
     opacity: 1;
-  filter:saturate(100%);
+    filter: saturate(100%);
 }
 
 
@@ -1354,17 +1511,19 @@
     display: none;
 }
 
-.fade .espaco .audiencia, .fade .espaco .barra{
-background-color:transparent !important}
-  
+.fade .espaco .audiencia,
+.fade .espaco .barra {
+    background-color: transparent !important
+}
+
 .grafico-comparacao .barra {
-letter-spacing: -0.2px;
-padding: 8px 8px 8px 0px;
-border-radius: 0px 5px 5px 0px;
-background-color: var(--cor-maxima);
-white-space: nowrap;
-transition: 0.3s;
-font-weight: 600;
+    letter-spacing: -0.2px;
+    padding: 8px 8px 8px 0px;
+    border-radius: 0px 5px 5px 0px;
+    background-color: var(--cor-maxima);
+    white-space: nowrap;
+    transition: 0.3s;
+    font-weight: 600;
 
 }
 
@@ -1381,19 +1540,27 @@ font-weight: 600;
 }
 
 .grade-comparacao .pricap::before {
-    content: &quot;No primeiro capítulo&quot;;
+    content: &quot;
+    No primeiro capítulo&quot;
+    ;
 }
 
 .grade-comparacao .maioraud::before {
-    content: &quot;Na maior audiência&quot;;
+    content: &quot;
+    Na maior audiência&quot;
+    ;
 }
 
 .grade-comparacao .ultcap::before {
-    content: &quot;No último capítulo&quot;;
+    content: &quot;
+    No último capítulo&quot;
+    ;
 }
 
 .grade-comparacao .mediageral::before {
-    content: &quot;Média geral&quot;;
+    content: &quot;
+    Média geral&quot;
+    ;
 }
 
 
@@ -1434,14 +1601,19 @@ font-weight: 600;
 }
 
 .timeline #semexibicao {
-	display: grid;
+    display: grid;
     opacity: 0.3;
-    align-items: center;}
+    align-items: center;
+}
 
-  .timeline #semexibicao p{display:none !important}
-  
+.timeline #semexibicao p {
+    display: none !important
+}
+
 .timeline #semexibicao::before {
-    content: &quot;Não foram exibidas produções nesse intervalo de tempo.&quot;;
+    content: &quot;
+    Não foram exibidas produções nesse intervalo de tempo.&quot;
+    ;
 }
 
 .timeline .scroll {
@@ -1467,17 +1639,17 @@ font-weight: 600;
     align-self: center;
 }
 
-  .timeline-tabela .linha .item:last-child {
+.timeline-tabela .linha .item:last-child {
     background-image: linear-gradient(to right, var(--cor-secundaria), transparent) !important;
-  background-color:transparent !important;
+    background-color: transparent !important;
 }
-  
+
 .timeline-horarios,
 .timeline-tabela {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: 40px repeat(6, 1fr);
-  height:550px !important;
+    height: 550px !important;
 }
 
 .timeline-tabela {
@@ -1503,18 +1675,20 @@ font-weight: 600;
     background: var(--cor-maxima);
 }
 
-  .timeline-dentro::after {
-  content:&quot;arraste a barra cinza acima para os lados para ver outros anos&quot;;
-  color:var(--cor-destaque);
-  text-transform:uppercase;
-  font-weight:900;
-  letter-spacing:2px;
-  text-align:center;
-  display:block;
-  margin-bottom:30px;
-  
+.timeline-dentro::after {
+    content: &quot;
+    arraste a barra cinza acima para os lados para ver outros anos&quot;
+    ;
+    color: var(--cor-destaque);
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-align: center;
+    display: block;
+    margin-bottom: 30px;
+
 }
-  
+
 .timeline .scroll::-webkit-scrollbar-thumb {
     background: var(--cor-secundaria);
 }
@@ -1573,23 +1747,29 @@ font-weight: 600;
     padding: 10px 20px !important;
 }
 
- .timeline #conjunto{
-  padding:0 !important;
-  background-color:var(--cor-texto) !important;
-  color:var(--cor-maxima) !important;
-  text-align:center;
+.timeline #conjunto {
+    padding: 0 !important;
+    background-color: var(--cor-texto) !important;
+    color: var(--cor-maxima) !important;
+    text-align: center;
     display: flex;
-  align-items: center;  /* Centraliza verticalmente */
-  justify-content: center;} 
+    align-items: center;
+    /* Centraliza verticalmente */
+    justify-content: center;
+}
 
- .timeline #conjunto::before{
-  align-self:center;
-  content:&quot;&lt;&gt;&quot;}
+.timeline #conjunto::before {
+    align-self: center;
+    content: &quot;
+    &lt;
+    &gt;
+    &quot;
+}
 
-  .timeline #conjunto p{
-  display:none !important;
-  }
-  
+.timeline #conjunto p {
+    display: none !important;
+}
+
 .timeline .iniciou {
     margin-left: 10px;
 }
@@ -1665,27 +1845,30 @@ font-weight: 600;
 
 
 .pagina-telenovela-titulo {
-	padding-top:20px;
+    padding-top: 20px;
     font-weight: 700;
     text-align: left;
-      font-size: var(--fonte-producao);
+    font-size: var(--fonte-producao);
 }
 
 .pagina-telenovela-titulo::before {
-    content: &quot;Telenovelas exibidas&quot;;
+    content: &quot;
+    Telenovelas exibidas&quot;
+    ;
     margin-right: 6px;
     margin-bottom: 50px;
     display: inline-block;
 }
 
 
-.grade-principal img{
-  transition:0.2s;
-  border-radius:7px}
+.grade-principal img {
+    transition: 0.2s;
+    border-radius: 7px
+}
 
-.grade-principal img:hover{
-  transform:scale(1.03);
-  box-shadow:0px 0px 30px var(--cor-secundaria)
+.grade-principal img:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 0px 30px var(--cor-secundaria)
 }
 
 
@@ -1695,193 +1878,213 @@ font-weight: 600;
 
 
 
-  
-  
-  
-  
-  
-  
-  .ultimasexibicoes .horario{display:grid;grid-template-columns:repeat(5, 1fr);gap:50px}
 
-.ultimasexibicoes h3{
-font-size:var(--fonte-titulo);margin-top:30px}
 
-.ultimasexibicoes img{border-radius:7px;aspect-ratio: 2 / 3;transition:0.2s}
 
-.ultimasexibicoes img:hover{transform:scale(1.03);box-shadow:0px 0px 30px var(--cor-secundaria);}
 
-.ultimasexibicoes .horario .maisproducoes{
-        padding: 30px;
-font-size:20px;
-line-height:1.2;
+
+
+.ultimasexibicoes .horario {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 50px
+}
+
+.ultimasexibicoes h3 {
+    font-size: var(--fonte-titulo);
+    margin-top: 30px
+}
+
+.ultimasexibicoes img {
+    border-radius: 7px;
+    aspect-ratio: 2 / 3;
+    transition: 0.2s
+}
+
+.ultimasexibicoes img:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 0px 30px var(--cor-secundaria);
+}
+
+.ultimasexibicoes .horario .maisproducoes {
+    padding: 30px;
+    font-size: 20px;
+    line-height: 1.2;
     display: grid;
     align-items: center;
-background: radial-gradient(circle, #1995ee, #0f5d91);
-  color: var(--cor-maxima);
+    background: radial-gradient(circle, #1995ee, #0f5d91);
+    color: var(--cor-maxima);
     border-radius: 7px;
     text-align: center;
-    font-weight: 700;}
+    font-weight: 700;
+}
 
-.ultimasexibicoes .maisproducoes a{color:var(--cor-maxima) !important;text-decoration:none !important}
-  
-  
-  
-  
-  
-  
-  
+.ultimasexibicoes .maisproducoes a {
+    color: var(--cor-maxima) !important;
+    text-decoration: none !important
+}
 
 
 
 
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-     .bloco-homepage-fundo {
-        border-radius: 12px;
-        background-size: cover;
-        background-position: top;
-        transition: 5s;
-        margin-bottom: 20px;
-  }
 
 
-    .bloco-homepage-fundo:hover {
 
-        background-position: bottom;
-    }
 
-    .bloco-homepage {
-  width:calc(100% - 80px);
-        padding: 40px;
-        align-items: center;
-        color: #fff;
-        display: grid;
-        grid-template-columns: 3fr repeat(5, 1fr) !important;
-        grid-template-rows: auto;
-        backdrop-filter: blur(200px) !important;
-        border-radius: 12px;
-        gap: 20px;
-        background-color: rgba(0, 0, 0, 0.3);
-grid-template-areas: &#39;titulo producao1 producao2 producao3 producao4 producao5&#39;;
-  }
 
-    .bloco-homepage .emissora img {
-        height: 40px;
-        filter: brightness(0) invert(1);
-    }
 
-    .bloco-homepage .exibicao-noar::before {
-        content: &quot;
-        no ar&quot;
-        ;
-        text-transform: uppercase;
-        font-weight: 800;
-        padding: 8px 12px;
-        background-color: rgba(255, 255, 255, 0.2);
-        border-radius: 4px;
-    }
 
-    .bloco-homepage .exibicaoanterior::before {
-        content: &quot;
-        Exibições anteriores&quot;
-    }
 
-    .bloco-homepage .vejamais {
-        display: inline-block;
-        font-size: var(--fonte-pequena);
-        text-decoration: none;
-        color: #fff;
-        padding: 8px 12px;
-        transition: 0.2s;
-  		border-radius:5px;
-        background-color: rgba(255, 255, 255, 0.2);
-    }
 
-    .bloco-homepage .descricao {
-        font-size: var(--fonte-pequena);
-        line-height: 1.2;
-        font-weight: 500
-    }
 
-    .bloco-homepage .vejamais:hover {
-        padding: 8px 15px;
-    }
 
-    .bloco-homepage h2 {
-  		margin:0 !important;
-  		display:grid;
-  		gap:12px;
-  color: #fff !important;
-        padding: 0;
-        font-size: var(--fonte-titulo);
-        grid-area: titulo
-    }
 
-    .bloco-homepage a img {
-        width: 100%;
-        aspect-ratio: 2 / 3;
-        border-radius: 7px;
-  transition:0.2s
-    }
 
-  
-      .bloco-homepage a img:hover {
-		transform:scale(1.05);
-  }
-    .bloco-homepage anth-of-type(1) {
-        grid-area: producao1
-    }
 
-    .bloco-homepage anth-of-type(2) {
-        grid-area: producao2
-    }
 
-    .bloco-homepage anth-of-type(3) {
-        grid-area: producao3
-    }
 
-    .bloco-homepage anth-of-type(4) {
-        grid-area: producao4
-    }
 
-    .bloco-homepage anth-of-type(5) {
-        grid-area: producao5
-    }
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+
+
+
+
+
+
+.bloco-homepage-fundo {
+    border-radius: 12px;
+    background-size: cover;
+    background-position: top;
+    transition: 5s;
+    margin-bottom: 20px;
+}
+
+
+.bloco-homepage-fundo:hover {
+
+    background-position: bottom;
+}
+
+.bloco-homepage {
+    width: calc(100% - 80px);
+    padding: 40px;
+    align-items: center;
+    color: #fff;
+    display: grid;
+    grid-template-columns: 3fr repeat(5, 1fr) !important;
+    grid-template-rows: auto;
+    backdrop-filter: blur(200px) !important;
+    border-radius: 12px;
+    gap: 20px;
+    background-color: rgba(0, 0, 0, 0.3);
+    grid-template-areas: &#39;
+    titulo producao1 producao2 producao3 producao4 producao5&#39;
+    ;
+}
+
+.bloco-homepage .emissora img {
+    height: 40px;
+    filter: brightness(0) invert(1);
+}
+
+.bloco-homepage .exibicao-noar::before {
+    content: &quot;
+    no ar&quot;
+    ;
+    text-transform: uppercase;
+    font-weight: 800;
+    padding: 8px 12px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+}
+
+.bloco-homepage .exibicaoanterior::before {
+    content: &quot;
+    Exibições anteriores&quot;
+}
+
+.bloco-homepage .vejamais {
+    display: inline-block;
+    font-size: var(--fonte-pequena);
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 12px;
+    transition: 0.2s;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.bloco-homepage .descricao {
+    font-size: var(--fonte-pequena);
+    line-height: 1.2;
+    font-weight: 500
+}
+
+.bloco-homepage .vejamais:hover {
+    padding: 8px 15px;
+}
+
+.bloco-homepage h2 {
+    margin: 0 !important;
+    display: grid;
+    gap: 12px;
+    color: #fff !important;
+    padding: 0;
+    font-size: var(--fonte-titulo);
+    grid-area: titulo
+}
+
+.bloco-homepage a img {
+    width: 100%;
+    aspect-ratio: 2 / 3;
+    border-radius: 7px;
+    transition: 0.2s
+}
+
+
+.bloco-homepage a img:hover {
+    transform: scale(1.05);
+}
+
+.bloco-homepage anth-of-type(1) {
+    grid-area: producao1
+}
+
+.bloco-homepage anth-of-type(2) {
+    grid-area: producao2
+}
+
+.bloco-homepage anth-of-type(3) {
+    grid-area: producao3
+}
+
+.bloco-homepage anth-of-type(4) {
+    grid-area: producao4
+}
+
+.bloco-homepage anth-of-type(5) {
+    grid-area: producao5
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1890,7 +2093,9 @@ grid-template-areas: &#39;titulo producao1 producao2 producao3 producao4 produca
 
     body,
     html {
-        font-family: &#39;Plus Jakarta Sans&#39; !important;
+        font-family: &#39;
+        Plus Jakarta Sans&#39;
+        !important;
     }
 
     .autopagerize_page_element {
@@ -1910,7 +2115,9 @@ grid-template-areas: &#39;titulo producao1 producao2 producao3 producao4 produca
         grid-template-columns: repeat(3, 1fr) !important;
     }
 
-    .linhadotempo&gt;.coluna:nth-child(-n+2) {
+    .linhadotempo&gt;
+
+    .coluna:nth-child(-n+2) {
         display: none !important;
     }
 
@@ -1936,7 +2143,9 @@ grid-template-areas: &#39;titulo producao1 producao2 producao3 producao4 produca
     }
 
     .calendario .linha {
-        grid-template-areas: &#39;ordem inicio inicio dia1 dia2 dia3 dia4 dia5 dia6&#39; !important;
+        grid-template-areas: &#39;
+        ordem inicio inicio dia1 dia2 dia3 dia4 dia5 dia6&#39;
+        !important;
         grid-template-columns: repeat(9, 1fr) !important;
         padding: 5px !important;
         gap: 5px !important;
@@ -1962,9 +2171,13 @@ grid-template-areas: &#39;titulo producao1 producao2 producao3 producao4 produca
 
     .informacoes {
         grid-template-areas:
-            &#39;imagem&#39;
-            &#39;informacoes&#39;
-            &#39;versoes&#39; !important;
+            &#39;
+        imagem&#39;
+        &#39;
+        informacoes&#39;
+        &#39;
+        versoes&#39;
+        !important;
         grid-template-columns: 1fr !important;
     }
 
@@ -2011,7 +2224,9 @@ grid-template-areas: &#39;titulo producao1 producao2 producao3 producao4 produca
         grid-template-columns: repeat(2, 1fr) !important;
     }
 
-    .linhadotempo&gt;.coluna:nth-child(-n+2) {
+    .linhadotempo&gt;
+
+    .coluna:nth-child(-n+2) {
         display: none !important;
     }
 
@@ -2043,7 +2258,9 @@ grid-template-areas: &#39;titulo producao1 producao2 producao3 producao4 produca
     }
 
     .calendario .linha {
-        grid-template-areas: &#39;ordem inicio inicio dia1 dia2 dia3 dia4 dia5 dia6&#39; !important;
+        grid-template-areas: &#39;
+        ordem inicio inicio dia1 dia2 dia3 dia4 dia5 dia6&#39;
+        !important;
         grid-template-columns: repeat(9, 1fr) !important;
         padding: 5px !important;
         gap: 5px !important;
@@ -2065,4 +2282,3 @@ grid-template-areas: &#39;titulo producao1 producao2 producao3 producao4 produca
         margin-top: 20px !important;
     }
 }
-
