@@ -3,7 +3,7 @@
   
   
   html, body {
-  font-family: &quot;Plus Jakarta Sans&quot;, sans-serif !important;
+  font-family: "Plus Jakarta Sans", sans-serif !important;
 }
 
   .post-title, .post-meta{display: none !important}
@@ -62,7 +62,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-    grid-template-areas: &#39;calendario graficos&#39;
+    grid-template-areas: 'calendario graficos'
 }
 
 
@@ -141,7 +141,7 @@
     display: grid;
     gap: 25px;
     grid-template-columns: 1.6fr 4.2fr 2.2fr;
-    grid-template-areas: &#39;imagem informacoes informacoes informacoes versoes&#39;
+    grid-template-areas: 'imagem informacoes informacoes informacoes versoes'
 }
 
 .info1 {
@@ -184,24 +184,24 @@
 
 .autor a:not(:first-of-type)::before,
 .diretor a:not(:first-of-type)::before {
-    content: &#39;, &#39;;
+    content: ', ';
   font-weight:normal;
 }
 
 .autor a:last-of-type::before,
 .diretor a:last-of-type::before {
-    content: &#39; e &#39;;
+    content: ' e ';
   font-weight:normal;
 }
   
 .autor a:only-of-type::before,
 .diretor a:only-of-type::before {
-    content: &#39;&#39;;
+    content: '';
     font-weight: normal;
 }
   
   .cabecalho .horario::before {
-    content: &quot; exibida na faixa &quot;;
+    content: " exibida na faixa ";
 }
 
 .cabecalho .producao {
@@ -224,39 +224,39 @@
 }
 
 .cabecalho .autor::before {
-    content: &quot;Autoria de &quot;;
+    content: "Autoria de ";
 }
 
 .cabecalho .diretor::before {
-    content: &quot;Direção de &quot;;
+    content: "Direção de ";
 }
 
 .primeirocap::before {
-    content: &quot;Exibida entre &quot;;
+    content: "Exibida entre ";
 }
 
 .noar .primeirocap::before {
-    content: &quot;Exibida desde &quot; !important;
+    content: "Exibida desde " !important;
 }
 
 .primeirocap::after {
-    content: &quot; e &quot;;
+    content: " e ";
 }
 
 .noar .primeirocap::after {
-    content: &quot;&quot; !important;
+    content: "" !important;
 }
 
 .capitulos::before {
-    content: &quot;, com &quot;;
+    content: ", com ";
 }
 
 .capitulos::after {
-    content: &quot; capítulos&quot;;
+    content: " capítulos";
 }
 
 .noar .capitulos::after {
-    content: &quot; capítulos até agora&quot; !important;
+    content: " capítulos até agora" !important;
 }
 
 .producao,
@@ -277,7 +277,7 @@
 }
   
 .noar .formato::after{
-  content:&#39;no ar&#39;;
+  content:'no ar';
   padding:5px 10px;
   line-height:1;
   background-color:rgba(255,255,255,0.2);
@@ -357,37 +357,37 @@
 
 .globoplay::before {
     color: #fff;
-    content: &quot;globoplay&quot;;
+    content: "globoplay";
 }
 
 .memoriaglobo::before {
     color: #fff;
-    content: &quot;memoriaglobo&quot;;
+    content: "memoriaglobo";
 }
 
 .wikipedia::before {
     color: #fff;
-    content: &quot;wikipedia&quot;;
+    content: "wikipedia";
 }
 
 .imdb::before {
     color: #fff;
-    content: &quot;imdb&quot;;
+    content: "imdb";
 }
 
 .tvtime::before {
     color: #fff;
-    content: &quot;tvtime&quot;;
+    content: "tvtime";
 }
 
 .trakttv::before {
     color: #fff;
-    content: &quot;trakt.tv&quot;;
+    content: "trakt.tv";
 }
 
 .filmow::before {
     color: #fff;
-    content: &quot;filmow&quot;;
+    content: "filmow";
 }
 
 
@@ -513,93 +513,93 @@
 }
 
 .audpricap .data::before {
-    content: &quot;pontos no primeiro capítulo, exibido em &quot;
+    content: "pontos no primeiro capítulo, exibido em "
 }
 
 .maioraud .data::before {
-    content: &quot;pontos na maior audiência, em &quot;
+    content: "pontos na maior audiência, em "
 }
 
 .menoraud .data::before {
-    content: &quot;pontos na menor audiência, em &quot;
+    content: "pontos na menor audiência, em "
 }
 
 .audultcap .data::before {
-    content: &quot;pontos no último capítulo, em &quot;
+    content: "pontos no último capítulo, em "
 }
 
 .nameta::after {
-    content: &quot;capítulos atingiram a meta do horário&quot;
+    content: "capítulos atingiram a meta do horário"
 }
 
 /*
-.cap25 .data::before{content:&quot;pontos até o 25º capítulo &quot;}
-.cap50 .data::before{content:&quot;pontos até o 50º capítulo &quot;}
-.cap75 .data::before{content:&quot;pontos até o 75º capítulo &quot;}
-.cap100 .data::before{content:&quot;pontos até o 100º capítulo &quot;}
-.cap150 .data::before{content:&quot;pontos até o 150º capítulo &quot;}
-.totalcap .data::before{content:&quot;pontos de média até o capítulo &quot;}
+.cap25 .data::before{content:"pontos até o 25º capítulo "}
+.cap50 .data::before{content:"pontos até o 50º capítulo "}
+.cap75 .data::before{content:"pontos até o 75º capítulo "}
+.cap100 .data::before{content:"pontos até o 100º capítulo "}
+.cap150 .data::before{content:"pontos até o 150º capítulo "}
+.totalcap .data::before{content:"pontos de média até o capítulo "}
 */
 
 .noar .cap25 .data::before {
     display: inline-block;
-    content: &quot;pontos até o 25º capítulo, exibido em &quot; !important;
+    content: "pontos até o 25º capítulo, exibido em " !important;
 }
 
 .noar .cap50 .data::before {
     display: inline-block;
-    content: &quot;pontos até o 50º capítulo, exibido em &quot; !important;
+    content: "pontos até o 50º capítulo, exibido em " !important;
 }
 
 .noar .cap100 .data::before {
     display: inline-block;
-    content: &quot;pontos até o 100º capítulo, exibido em &quot; !important;
+    content: "pontos até o 100º capítulo, exibido em " !important;
 }
 
 .noar .cap150 .data::before {
     display: inline-block;
-    content: &quot;pontos até o 150º capítulo, exibido em &quot; !important;
+    content: "pontos até o 150º capítulo, exibido em " !important;
 }
 
 .noar .totalcap .data::before {
     display: inline;
-    content: &quot; pontos de média nos &quot; !important;
+    content: " pontos de média nos " !important;
     margin-right: 5px;
 }
 
 .noar .totalcap .data::after {
-    content: &quot; capítulos já exibidos&quot; !important;
+    content: " capítulos já exibidos" !important;
 }
 
 
 
 .cap25 .data::before {
     display: inline-block;
-    content: &quot;pontos até o 25º capítulo, exibido em &quot;;
+    content: "pontos até o 25º capítulo, exibido em ";
 }
 
 .cap50 .data::before {
     display: inline-block;
-    content: &quot;pontos até o 50º capítulo, exibido em &quot;;
+    content: "pontos até o 50º capítulo, exibido em ";
 }
 
 .cap100 .data::before {
     display: inline-block;
-    content: &quot;pontos até o 100º capítulo, exibido em &quot;;
+    content: "pontos até o 100º capítulo, exibido em ";
 }
 
 .cap150 .data::before {
     display: inline-block;
-    content: &quot;pontos até o 150º capítulo, exibido em &quot;;
+    content: "pontos até o 150º capítulo, exibido em ";
 }
 
 .totalcap .data::before {
     display: inline-block;
-    content: &quot; pontos é a média nas &quot;;
+    content: " pontos é a média nas ";
 }
 
 .totalcap .data::after {
-    content: &quot; exibições da produção&quot;;
+    content: " exibições da produção";
 }
 
 
@@ -609,22 +609,22 @@
 
 .cap25.fade .data::before {
     display: inline-block;
-    content: &quot;pontos até o 25º capítulo, ainda não exibido&quot; !important;
+    content: "pontos até o 25º capítulo, ainda não exibido" !important;
 }
 
 .cap50.fade .data::before {
     display: inline-block;
-    content: &quot;pontos até o 50º capítulo, ainda não exibido&quot; !important
+    content: "pontos até o 50º capítulo, ainda não exibido" !important
 }
 
 .cap100.fade .data::before {
     display: inline-block;
-    content: &quot;pontos até o 100º capítulo, ainda não exibido&quot; !important
+    content: "pontos até o 100º capítulo, ainda não exibido" !important
 }
 
 .cap150.fade .data::before {
     display: inline-block;
-    content: &quot;pontos até o 150º capítulo, ainda não exibido&quot; !important
+    content: "pontos até o 150º capítulo, ainda não exibido" !important
 }
 
 
@@ -633,27 +633,27 @@
 
 .info4 .sharesp::after {
     display: inline-block;
-    content: &quot;é a média de share na região da Grande São Paulo&quot;;
+    content: "é a média de share na região da Grande São Paulo";
 }
 
 .info4 .sharerj::after {
     display: inline-block;
-    content: &quot;é a média de share na região da Grande Rio de Janeiro&quot;;
+    content: "é a média de share na região da Grande Rio de Janeiro";
 }
 
 .info4 .elevacaosp::after {
     display: inline-block;
-    content: &quot;pontos na Grande São Paulo em relação à exibição anterior&quot;;
+    content: "pontos na Grande São Paulo em relação à exibição anterior";
 }
 
 .info4 .elevacaorj::after {
     display: inline-block;
-    content: &quot;pontos na Grande Rio de Janeiro em relação à exibição anterior&quot;;
+    content: "pontos na Grande Rio de Janeiro em relação à exibição anterior";
 }
 
 .info4 .elevacaopnt::after {
     display: inline-block;
-    content: &quot;pontos no Painel Nacional de Televisão em relação à exibição anterior&quot;;
+    content: "pontos no Painel Nacional de Televisão em relação à exibição anterior";
 }
 
 
@@ -754,12 +754,12 @@
 .elevacaopnt .pos::before,
 .totalcap.positivo::before,
 .positivo::before{
-    content: &#39;+&#39;;
+    content: '+';
     display: inline-block;
 }
 
 .negativo::before {
-    content: &#39;&#39;;
+    content: '';
     display: inline-block;
 }
 
@@ -773,7 +773,7 @@
 .info3 .negativo::after,
 .info4 .positivo::after,
 .info4 .negativo::after {
-    content: &#39;pontos&#39;;
+    content: 'pontos';
     padding-left: 5px;
     display: inline-block;
 }
@@ -786,39 +786,39 @@
 
 
 .info3-titulo::before {
-    content: &quot;Marcas de audiência da produção em São Paulo&quot;;
+    content: "Marcas de audiência da produção em São Paulo";
 }
 
 .grafico-diaria-titulo::before {
-    content: &quot;Gráfico da audiência detalhada por dia em São Paulo&quot;;
+    content: "Gráfico da audiência detalhada por dia em São Paulo";
 }
 
 .grafico-acumulado-titulo::before {
-    content: &quot;Gráfico da média de audiência até o capítulo em São Paulo&quot;;
+    content: "Gráfico da média de audiência até o capítulo em São Paulo";
 }
 
 .calendario-titulo::before {
-    content: &quot;Tabela da audiência detalhada em São Paulo&quot;;
+    content: "Tabela da audiência detalhada em São Paulo";
 }
 
 .calendario-media-titulo::before {
-    content: &quot;Média por semana&quot;;
+    content: "Média por semana";
 }
 
 .linhadotempo-titulo::before {
-    content: &quot;Cronologia de produções no horário&quot;;
+    content: "Cronologia de produções no horário";
 }
 
 .capitulosacumulados-titulo::before {
-    content: &quot;Evolução da audiência por capítulos acumulados em São Paulo&quot;;
+    content: "Evolução da audiência por capítulos acumulados em São Paulo";
 }
 
 .grafico-comparacao-titulo::before {
-    content: &quot;Comparação da audiência em São Paulo com produções anteriores do horário&quot;;
+    content: "Comparação da audiência em São Paulo com produções anteriores do horário";
 }
 
 .elevacaoshare-titulo::before {
-    content: &quot;Share e elevação em comparação com a exibição anterior&quot;;
+    content: "Share e elevação em comparação com a exibição anterior";
 }
 
 
@@ -965,7 +965,7 @@
 .calendario .linha {
     display: grid;
     grid-template-columns: repeat(11, 1fr);
-    grid-template-areas: &#39;ordem inicio inicio fim fim dia1 dia2 dia3 dia4 dia5 dia6&#39;;
+    grid-template-areas: 'ordem inicio inicio fim fim dia1 dia2 dia3 dia4 dia5 dia6';
     gap: 7px;
     padding: 0px 10px;
     border-radius: 5px;
@@ -983,7 +983,7 @@
 .calendario-media .linha {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    grid-template-areas: &#39;ordem mediasp mediasp mediarj mediarj mediapnt mediapnt&#39;;
+    grid-template-areas: 'ordem mediasp mediasp mediarj mediarj mediapnt mediapnt';
     gap: 7px;
 }
 
@@ -1112,55 +1112,55 @@
 
 .calendario .cab .ordem::before,
 .calendario-media .cab .ordem::before {
-    content: &quot;Sem.&quot;
+    content: "Sem."
 }
 
 .calendario .cab .inicio::before {
-    content: &quot;Início&quot;
+    content: "Início"
 }
 
 .calendario .cab .fim::before {
-    content: &quot;Fim&quot;
+    content: "Fim"
 }
 
 .calendario .cab .dia1::before {
-    content: &quot;Seg&quot;
+    content: "Seg"
 }
 
 .calendario .cab .dia2::before {
-    content: &quot;Ter&quot;
+    content: "Ter"
 }
 
 .calendario .cab .dia3::before {
-    content: &quot;Qua&quot;
+    content: "Qua"
 }
 
 .calendario .cab .dia4::before {
-    content: &quot;Qui&quot;
+    content: "Qui"
 }
 
 .calendario .cab .dia5::before {
-    content: &quot;Sex&quot;
+    content: "Sex"
 }
 
 .calendario .cab .dia6::before {
-    content: &quot;Sáb&quot;
+    content: "Sáb"
 }
 
 .calendario .cab .dia7::before {
-    content: &quot;Dom&quot;
+    content: "Dom"
 }
 
 .calendario-media .cab .mediasp::before {
-    content: &quot;Média SP&quot;
+    content: "Média SP"
 }
 
 .calendario-media .cab .mediarj::before {
-    content: &quot;Média RJ&quot;
+    content: "Média RJ"
 }
 
 .calendario-media .cab .mediapnt::before {
-    content: &quot;Média PNT&quot;
+    content: "Média PNT"
 }
 
 .calendario .cab .dia1,
@@ -1381,19 +1381,19 @@ font-weight: 600;
 }
 
 .grade-comparacao .pricap::before {
-    content: &quot;No primeiro capítulo&quot;;
+    content: "No primeiro capítulo";
 }
 
 .grade-comparacao .maioraud::before {
-    content: &quot;Na maior audiência&quot;;
+    content: "Na maior audiência";
 }
 
 .grade-comparacao .ultcap::before {
-    content: &quot;No último capítulo&quot;;
+    content: "No último capítulo";
 }
 
 .grade-comparacao .mediageral::before {
-    content: &quot;Média geral&quot;;
+    content: "Média geral";
 }
 
 
@@ -1441,7 +1441,7 @@ font-weight: 600;
   .timeline #semexibicao p{display:none !important}
   
 .timeline #semexibicao::before {
-    content: &quot;Não foram exibidas produções nesse intervalo de tempo.&quot;;
+    content: "Não foram exibidas produções nesse intervalo de tempo.";
 }
 
 .timeline .scroll {
@@ -1504,7 +1504,7 @@ font-weight: 600;
 }
 
   .timeline-dentro::after {
-  content:&quot;arraste a barra cinza acima para os lados para ver outros anos&quot;;
+  content:"arraste a barra cinza acima para os lados para ver outros anos";
   color:var(--cor-destaque);
   text-transform:uppercase;
   font-weight:900;
@@ -1584,7 +1584,7 @@ font-weight: 600;
 
  .timeline #conjunto::before{
   align-self:center;
-  content:&quot;&lt;&gt;&quot;}
+  content:"&lt;&gt;"}
 
   .timeline #conjunto p{
   display:none !important;
@@ -1672,7 +1672,7 @@ font-weight: 600;
 }
 
 .pagina-telenovela-titulo::before {
-    content: &quot;Telenovelas exibidas&quot;;
+    content: "Telenovelas exibidas";
     margin-right: 6px;
     margin-bottom: 50px;
     display: inline-block;
@@ -1776,7 +1776,7 @@ background: radial-gradient(circle, #1995ee, #0f5d91);
         border-radius: 12px;
         gap: 20px;
         background-color: rgba(0, 0, 0, 0.3);
-grid-template-areas: &#39;titulo producao1 producao2 producao3 producao4 producao5&#39;;
+grid-template-areas: 'titulo producao1 producao2 producao3 producao4 producao5';
   }
 
     .bloco-homepage .emissora img {
@@ -1785,8 +1785,8 @@ grid-template-areas: &#39;titulo producao1 producao2 producao3 producao4 produca
     }
 
     .bloco-homepage .exibicao-noar::before {
-        content: &quot;
-        no ar&quot;
+        content: "
+        no ar"
         ;
         text-transform: uppercase;
         font-weight: 800;
@@ -1796,8 +1796,8 @@ grid-template-areas: &#39;titulo producao1 producao2 producao3 producao4 produca
     }
 
     .bloco-homepage .exibicaoanterior::before {
-        content: &quot;
-        Exibições anteriores&quot;
+        content: "
+        Exibições anteriores"
     }
 
     .bloco-homepage .vejamais {
@@ -1890,7 +1890,7 @@ grid-template-areas: &#39;titulo producao1 producao2 producao3 producao4 produca
 
     body,
     html {
-        font-family: &#39;Plus Jakarta Sans&#39; !important;
+        font-family: 'Plus Jakarta Sans' !important;
     }
 
     .autopagerize_page_element {
@@ -1936,7 +1936,7 @@ grid-template-areas: &#39;titulo producao1 producao2 producao3 producao4 produca
     }
 
     .calendario .linha {
-        grid-template-areas: &#39;ordem inicio inicio dia1 dia2 dia3 dia4 dia5 dia6&#39; !important;
+        grid-template-areas: 'ordem inicio inicio dia1 dia2 dia3 dia4 dia5 dia6' !important;
         grid-template-columns: repeat(9, 1fr) !important;
         padding: 5px !important;
         gap: 5px !important;
@@ -1962,9 +1962,9 @@ grid-template-areas: &#39;titulo producao1 producao2 producao3 producao4 produca
 
     .informacoes {
         grid-template-areas:
-            &#39;imagem&#39;
-            &#39;informacoes&#39;
-            &#39;versoes&#39; !important;
+            'imagem'
+            'informacoes'
+            'versoes' !important;
         grid-template-columns: 1fr !important;
     }
 
@@ -2043,7 +2043,7 @@ grid-template-areas: &#39;titulo producao1 producao2 producao3 producao4 produca
     }
 
     .calendario .linha {
-        grid-template-areas: &#39;ordem inicio inicio dia1 dia2 dia3 dia4 dia5 dia6&#39; !important;
+        grid-template-areas: 'ordem inicio inicio dia1 dia2 dia3 dia4 dia5 dia6' !important;
         grid-template-columns: repeat(9, 1fr) !important;
         padding: 5px !important;
         gap: 5px !important;
