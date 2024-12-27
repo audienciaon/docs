@@ -3805,7 +3805,7 @@ padding: 0;
         main.dark.color)
 }
 
-.foot-bar-social {}
+.foot-bar-social::before {content:"© 2024. Conteúdo creditado a TV Globo, Globoplay, SBT, TV Record e Bandeirantes. Todos os direitos reservados."}
 
 .foot-bar-social {
     float: right;
