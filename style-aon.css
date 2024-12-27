@@ -1,18 +1,6 @@
 <style>
 
-  
-  html, body {
-  font-family: "Plus Jakarta Sans", sans-serif !important;
-}
-
-  .post-title, .post-meta{display: none !important}
-  
-  
-  
-  
-  
-  
-  
+ 
   :root {
     --cor-maxima: #fff;
     --cor-fundo: #eee;
@@ -49,6 +37,15 @@
     --font-family: Plus Jakarta Sans;
 }
 */
+
+
+
+  html, body {
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+}
+
+  .post-title, .post-meta{display: none !important}
+  
 
 
 
